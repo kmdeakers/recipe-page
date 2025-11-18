@@ -1,56 +1,137 @@
 @font-face {
-    font-family: 'Young Serif';
-    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Young Serif";
+  src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Outfit";
-    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
-    font-weight: 100 900;
-    font-style: normal;
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+  font-weight: 100 900;
+  font-style: normal;
 }
 
 body {
-    background-color: hsl(30, 18%, 87%);
+  background-color: hsl(30, 18%, 87%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 main {
-    background-color: white;
-    font-family: 'Young Serif', serif;
+  background-color: white;
+  font-family: "Young Serif", serif;
+  width: 750px;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0;
+  border-radius: 20px;
+}
+
+main img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.description {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
 }
 
 .prep-time {
-    font-family: 'Outfit', sans-serif;
-    background-color: hsl(330, 100%, 98%);
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  border-radius: 10px;
 }
 
 .prep-time h3 {
-    color: hsl(332, 51%, 32%);
+  color: hsl(332, 51%, 32%);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.prep-time ul {
+  line-height: 2;
+  margin-bottom: 0;
+  padding-left: 20px;
+  list-style-position: outside;
+  margin-top: 5px;
+  font-weight: 300;
+}
+
+.prep-time ul b {
+  font-weight: bold;
+}
+
+.prep-time ul li {
+  padding-left: 20px;
+}
+
+.prep-time ul li::marker {
+  color: hsl(332, 51%, 32%);
+  font-size: 0.8em;
+}
+
+.prep-time ul li:last-child {
+  margin-bottom: 0;
 }
 
 .ingredients h2 {
-    color: hsl(14, 45%, 36%);
+  color: hsl(14, 45%, 36%);
 }
 
 .ingredients ul {
-    font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  line-height: 2;
+  padding-left: 20px;
+}
+
+.ingredients ul li {
+  padding-left: 20px;
+}
+
+.ingredients ul li::marker {
+  color: hsl(332, 51%, 32%);
+  font-size: 0.8em;
 }
 
 .instructions h2 {
-    color: hsl(14, 45%, 36%);
+  color: hsl(14, 45%, 36%);
 }
 
 .instructions ol {
-    font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  padding-left: 20px;
+}
+
+.instructions ol li {
+    padding-left: 20px;
 }
 
 .nutrition-info h2 {
-    color: hsl(14, 45%, 36%);
+  color: hsl(14, 45%, 36%);
 }
 
 .nutrition-info table,
-.nutrition-info p  {
-    font-family: 'Outfit', sans-serif;
+.nutrition-info p {
+  font-family: "Outfit", sans-serif;
+}
+
+.attribution {
+  margin-top: 20px; /* Space above attribution */
+  text-align: center;
 }
