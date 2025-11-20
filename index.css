@@ -119,7 +119,7 @@ main img {
 }
 
 .instructions ol li {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .nutrition-info h2 {
@@ -129,9 +129,59 @@ main img {
 .nutrition-info table,
 .nutrition-info p {
   font-family: "Outfit", sans-serif;
+  font-weight: 300;
+}
+
+.nutrition-info table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.nutrition-info table tr {
+  display: flex;
+  width: 100%;
+}
+
+.nutrition-info table td {
+  flex: 1 1 50%;
+  width: 50%;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition-info table tr:last-child td {
+  border-bottom: none;
+}
+
+.nutrition-info table td:nth-child(2) {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
 }
 
 .attribution {
   margin-top: 20px; /* Space above attribution */
   text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  body {
+    background-color: white;
+    min-height: 100vh;
+    display: block;
+  }
+  main {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
 }
